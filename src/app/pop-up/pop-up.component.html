@@ -1,0 +1,36 @@
+<h1 mat-dialog-title>Selected user</h1>
+<div mat-dialog-content>
+      <form class="example-form" [formGroup]="myform" (ngSubmit)="updateData()" >  
+        <table class="example-full-width" cellspacing="0" >
+          <tr>
+            <mat-form-field class="example-full-width">
+            <mat-label>Id</mat-label>
+            <input matInput value=""  formControlName="id">
+          </mat-form-field>
+          <br>
+
+            <mat-form-field class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input matInput value="" formControlName="name">
+          </mat-form-field>
+
+         <br>
+            <mat-form-field class="example-full-width">
+            <mat-label>UserId</mat-label>
+            <input matInput value="" formControlName="userId">
+          </mat-form-field>
+
+         <br>
+            <mat-form-field class="example-full-width" >
+            <mat-label>Body</mat-label>
+            <input matInput value="" formControlName="body">
+          </mat-form-field>
+        </tr>
+        <button mat-raised-button color="primary" (click)="updateData()">Update data </button>
+        
+      </table>
+      </form>
+    </div>
+<div mat-dialog-actions>
+
+</div>  
